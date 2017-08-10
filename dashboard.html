@@ -1,0 +1,9 @@
+{{define "admin/dashboard"}}
+{{ template "header"}}
+     <div id="elm-area"></div>
+     <script type="text/javascript" src="/static/js/adminDashboard.js"></script>
+     <script type="text/javascript">
+        Elm.AdminDashboard.embed(document.getElementById('elm-area'));
+    </script>
+{{ template "footer"}}
+{{end}}
